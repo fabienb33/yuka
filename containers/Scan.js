@@ -20,6 +20,7 @@ function Scan() {
     console.log(data)
   };
 
+
   if (hasPermission === null) {
     return <Text>Requesting for camera permission</Text>;
   }
@@ -30,8 +31,7 @@ function Scan() {
   return (
     <View style={{ flex: 1, flexDirection: 'column', justifyContent: 'flex-end',}}>
       <BarCodeScanner onBarCodeScanned={scanned ? undefined : handleBarCodeScanned}
-        style={StyleSheet.absoluteFillObject}
-      />
+        style={StyleSheet.absoluteFillObject}/>
       {scanned && <Button title={'Tap to Scan Again'} onPress={() => setScanned(false)} />}
     </View>
   );

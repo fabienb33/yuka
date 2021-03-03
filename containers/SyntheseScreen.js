@@ -15,7 +15,6 @@ function SyntheseScreen({navigation}) {
         setData(response.data);
         SetIsLoading(false);
        }  catch (error) {
-        alert("Produit non trouvé")
        }
     }
   fetchData()

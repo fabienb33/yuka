@@ -5,6 +5,9 @@ import HomeScreen00 from "./containers/HomeScreen00";
 import HomeScreen01 from "./containers/HomeScreen01";
 import HomeScreen02 from "./containers/HomeScreen02";
 import HomeScreen03 from "./containers/HomeScreen03";
+import StartScreen from "./containers/StartScreen";
+import SyntheseScreen from "./containers/SyntheseScreen";
+import RecommandationScreen from "./containers/RecommandationScreen";
 import Home from "./containers/Home"
 import Scan from "./containers/Scan"
 
@@ -13,13 +16,16 @@ const Stack = createStackNavigator();
 function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Home" screenOptions={{headerShown: false}}>
+      <Stack.Navigator initialRouteName="Home00" screenOptions={{headerShown: false}}>
         <Stack.Screen name="Home00" component={HomeScreen00} />
         <Stack.Screen name="Home01" component={HomeScreen01} options={{ title: "Home01" }}/>
         <Stack.Screen name="Home02" component={HomeScreen02} options={{ title: "Home02" }}/>
         <Stack.Screen name="Home03" component={HomeScreen03} options={{ title: "Home03" }}/>
         <Stack.Screen name="Home" component={Home} options={{ title: "" }}/>
         <Stack.Screen name="Scan" component={Scan} options={{ title: "" }}/>
+        <Stack.Screen name="StartScreen" component={StartScreen} options={{ title: "" }}/>
+        <Stack.Screen name="SyntheseScreen" component={SyntheseScreen} options={{ title: "" }}/>
+        <Stack.Screen name="RecommandationScreen" component={RecommandationScreen} options={{ title: "" }}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
