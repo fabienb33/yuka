@@ -2,6 +2,7 @@ import React, {useEffect, useState } from "react"
 import { View, Text, Button, SafeAreaView, Image, StyleSheet, TouchableOpacity } from "react-native";
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import axios from "axios";
+
  
 function SyntheseScreen({navigation}) {
 

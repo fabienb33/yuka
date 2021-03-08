@@ -1,6 +1,8 @@
 import * as React from "react";
 import { View, Text, Button, SafeAreaView, Image, StyleSheet, TouchableOpacity, ScrollView, Platform } from "react-native";
 import Constants from 'expo-constants';
+import { useRoute } from '@react-navigation/native';
+
 
 
 function StartScreen({navigation}) {
